@@ -1,0 +1,38 @@
+.content{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    border: solid 1px grey;
+}
+.title{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 60px; 
+}
+h2{
+   color: #006EB6; 
+   font-size: medium;
+   font-weight: 525;
+   border-bottom:solid 1px lightgray;
+}
+p {
+    margin-top: 30px;
+}
+li{
+    padding-bottom: 20px;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    align-content: center;
+    width: 150px;
+}
