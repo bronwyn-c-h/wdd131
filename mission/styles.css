@@ -1,3 +1,11 @@
+.dark{
+    background-color: black;
+    color: white;
+}
+.dark h2 {
+    color: lightblue;
+}
+
 .content{
     font-size: 20px;
     font-family: 'Times New Roman';
