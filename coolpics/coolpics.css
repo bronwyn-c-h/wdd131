@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+
+    body {
+        font-family: var(--secondary-font);
+        font-size: 1.2em;
+        background: #ebebeb;
+      }
+    header {
+        background: #52489c;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    a:link,
+    a:visited {
+        color: white;
+        font-family: var(--primary-font);
+        display: block;
+    }
+    header h1 {
+        margin: 0 auto;
+    }
+    header h2 {
+        font-family: var(--primary-font);
+    }
+    button {
+        background-color: #52489c;
+        color: #fff;
+        font-family: var(--primary-font);
+        border: none;
+    }
+    main {
+        text-align: center;
+    }
+    img{
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border: solid 8px #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+    }
+    .gallery {
+        display: grid;
+    }
+    figure {
+        margin: 0 auto;
+    }
+    footer {
+        background: #52489c;
+        color: white;
+        font-family: var(--primary-font);
+        margin: 0 auto;
+    }
+    footer p {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 700px){
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        a:link{
+            display: none;
+        }
+        button {
+            background-color: #52489c;
+            color: #fff;
+            font-family: var(--primary-font);
+            border: none;
+        }
+    }
+        
+    @media screen and (min-width: 1000px) {
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        button {
+            display: none;
+        }
+        a:link {
+            display: inline-block;
+            align-items: center;
+            text-align: center;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+    
