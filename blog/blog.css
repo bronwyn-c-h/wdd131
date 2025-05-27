@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Kanchenjunga:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
+*/
+.skiptocontent a {
+    position: absolute;
+	top:-40px;
+	/* Make sure it will be on the left edge of the screen */
+	/* Change the background and color to something that stands out */
+}
+.skiptocontent a:focus {
+	top:0
+}
+
+h1 {
+    font-family: "Lora", "Impact", "serif";
+    color: #473144;
+    margin: 10px;
+}
+
+.main-nav {
+    text-align: center;
+    color: #AF1B3F;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items: end;
+    border-top: solid 1px #ab6a7a;
+    border-bottom: solid 1px #ab6a7a;
+    padding: 10px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+    font-family: Helvetica, Arial, sans-serif;
+    gap: 1rem;
+    padding-right: 40px;
+}
+
+.info {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #473144;
+    margin: 10px;
+}
+
+.book {
+    color: #AF1B3F;
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.book img {
+    padding-left: 30px;
+}
+.book p {
+    color: #473144;
+}
+.book a {
+    text-decoration: none;
+    color: #AF1B3F;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 700px){
+    h1 {
+        text-align: center;
+    }
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (min-width: 700px){
+    h1{text-align: center;}
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
