@@ -9,11 +9,11 @@ Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
 .skiptocontent a {
     position: absolute;
 	top:-40px;
-	/* Make sure it will be on the left edge of the screen */
-	/* Change the background and color to something that stands out */
+    left: 0;
+    z-index: 100;
 }
 .skiptocontent a:focus {
-	top:0
+	top: 0;
 }
 
 h1 {
@@ -49,6 +49,14 @@ nav a {
     font-weight: bold;
     color: #473144;
     margin: 10px;
+    padding-top: 50px;
+    padding-right: 20px;
+    text-align: right;
+    border-right: solid 1px #ab6a7a;
+}
+
+.date {
+    font-size: 18px;
 }
 
 .book {
@@ -56,16 +64,36 @@ nav a {
     margin: 10px;
     font-family: Helvetica, Arial, sans-serif;
 }
-.book img {
-    padding-left: 30px;
-}
+
 .book p {
     color: #473144;
 }
+
 .book a {
     text-decoration: none;
     color: #AF1B3F;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.grid {
+    margin: 30px;
+}
+
+.filters {
+    border: solid 1px #ab6a7a;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+footer p {
+    background-color: #EFC69B;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 @media screen and (min-width: 700px){
@@ -74,14 +102,6 @@ nav a {
     }
     .grid{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    }
-}
-
-@media screen and (min-width: 700px){
-    h1{text-align: center;}
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     }
 }
