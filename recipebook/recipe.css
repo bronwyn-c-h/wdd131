@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ h1{
+    font-family: "Amatic SC";
+    font-size: 2rem;
+ }
+ form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 15px;
+}
+input{
+    height: 32px;
+    border-radius: 5px;
+    flex: 1 1 0%;
+    min-width: 0;
+    padding: 0 10px;
+}
+button{
+    background:none;  
+    padding: 0;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+#container{
+    border: solid 0.5px #333;
+    border-radius: 5px;
+    margin: 15px;
+}
+.recipe__tags{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: left;
+}
+.recipe__tags li{
+    border: solid 0.5px #333;
+    padding: 2px;
+    display: inline-block;
+}
+h2{
+    font-family: "Amatic SC";
+    text-decoration: none;
+    color: #1B98E0;
+}
+.recipe__description{
+    display: none;
+}
+.recipe img {
+	max-width: 100%;
+    width: 500px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+footer a {
+    font-size: 0.6em;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+@media screen and (min-width: 600px){
+    .recipe__description{
+    display: block;
+}
+}
+
+@media screen and (min-width: 960px) {
+    figure.recipe {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px; /* space between image and caption */
+        margin: 24px 0;
+    }
+    img{
+        margin: 20px;
+        max-width: 500px;
+    }
+    figcaption {
+        display: block;
+        flex: 1 1 0;
+        padding: 0;
+    }
+    form {
+    display: flex;
+    align-items: stretch; 
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: auto;
+    gap: 8px;
+}
+
+input[type="text"] {
+    height: 48px;         /* Set a height for both */
+    border-radius: 5px;
+    flex: 1 1 0%;
+    min-width: 0;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 48px;         /* Match input height */
+}
+
+button img {
+    height: 100%;         /* Fill button height */
+    width: auto;
+    display: block;
+}
+}
+
