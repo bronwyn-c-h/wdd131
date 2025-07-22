@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wardrobe</title>
+    <link rel="stylesheet" href="wardrobe.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="outfits.html">Outfits</a>
+        </div>
+    </nav>
+        <form>
+            <input type="text" name="query" placeholder="search your closet" />
+            <button type="submit">
+                <img src="img/search.svg" alt="Search" style="width:32px; height:32px;">
+            </button>
+        </form>
+    <main>
+        <h2>Suggested Outfit</h2>
+            <button id="new-outfit">Suggest New Outfit</button>
+            <div class="suggestfit"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bronwyn Hafen | Wardrobe</p>
+    </footer>
+</body>
+<script src = "wardrobe.js"></script>
+<script>
+  suggestOutfit(wardrobe);
+  document.getElementById('new-outfit').onclick = () => suggestOutfit(wardrobe);
+</script>
+</html>

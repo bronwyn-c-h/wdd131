@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wardrobe</title>
+    <link rel="stylesheet" href="wardrobe.css" />
+</head>
+<body>
+<nav>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="outfits.html">Outfits</a>
+  </div>
+  <div class="nav-logo">
+    <img src="logos/Wardrobe_transparent-.png" alt="Wardrobe Logo" style="max-width:120px;" />
+  </div>
+</nav>
+         <form>
+            <input type="text" name="query" placeholder="search your closet" />
+            <button type="submit">
+                <img src="img/search.svg" alt="Search" style="width:32px; height:32px;">
+            </button>
+        </form>
+    <main>
+        <section>
+            <h2>Your Closet</h2>
+            <p>Browse all the clothes in your closet, organized by type.</p>
+            <div class="clothing-category"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bronwyn Hafen | Wardrobe</p>
+    </footer>
+</body>
+<script src = "wardrobe.js"></script>
+<script>
+  renderCloset(wardrobe);
+</script>
+</html>
